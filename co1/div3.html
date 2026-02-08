@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Div with Image, Video and Text</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* First div: 2 columns */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* Second div: 3 columns */
+        .three-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+        }
+
+        .box {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img, video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>First Div – Image and Video (2 Columns)</h2>
+
+<div class="two-columns">
+    <!-- Image -->
+    <div class="box">
+        <h3>Image</h3>
+        <img src="https://via.placeholder.com/300" alt="Sample Image">
+    </div>
+
+    <!-- Video -->
+    <div class="box">
+        <h3>Video</h3>
+        <video controls>
+            <source src="sample.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<h2>Second Div – Image, Video and Text (3 Columns)</h2>
+
+<div class="three-columns">
+    <!-- Image -->
+    <div class="box">
+        <h3>Image</h3>
+        <img src="https://via.placeholder.com/300" alt="Sample Image">
+    </div>
+
+    <!-- Video -->
+    <div class="box">
+        <h3>Video</h3>
+        <video controls>
+            <source src="sample.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Text -->
+    <div class="box">
+        <h3>Text</h3>
+        <p>
+            This is sample text content inside the third column.
+            It explains the image and video shown.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Div Column Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* First div: 2 columns */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Second div: 3 columns */
+        .three-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        .box {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+<h2>First Div (2 Columns)</h2>
+<div class="two-columns">
+    <div class="box">Column 1</div>
+    <div class="box">Column 2</div>
+</div>
+
+<h2>Second Div (3 Columns)</h2>
+<div class="three-columns">
+    <div class="box">Column 1</div>
+    <div class="box">Column 2</div>
+    <div class="box">Column 3</div>
+</div>
+
+</body>
+</html>
